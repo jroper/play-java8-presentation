@@ -1,0 +1,282 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+
+    background: #92d13d;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+#map .step.active ~ .step { opacity: 1 }
+
+.step .full {
+    width: 900px;
+}
+
+.slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+    padding: 0;
+
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 20px;
+
+    color: rgb(102, 102, 102);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+.slide h2 {
+    width: 100%;
+    height: 90px;
+    color: white;
+    background: #444;
+    text-align: center;
+    font-size: 60px;
+    padding: 35px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+q {
+    display: block;
+    font-size: 80px;
+    line-height: 1.5em;
+    margin: 100px 50px 0 50px;
+    font-style: italic;
+}
+
+a.manifesto {
+    display: block;
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    color: gray;
+}
+
+.slide img {
+    margin: 40px auto 0;
+    display: block;
+}
+
+.slide pre.prettyprint {
+    width: 780px;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 26px;
+}
+
+.slide q strong {
+    white-space: nowrap;
+}
+
+.slide ol {
+    list-style-type: decimal;
+    margin: 40px 140px;
+}
+
+.slide li {
+    font-size: 50px;
+    line-height: 1.5em;
+}
+
+#title, #conclusion {
+    text-align: center;
+    line-height: 1.2;
+}
+
+#title h1 {
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#title .me {
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+#title .subtitle {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.twitter {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: monospace;
+}
+
+#conclusion .link {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+#title .typesafe img {
+    height: 60px;
+}
+
+.blackOut {
+  position: fixed;
+  display: none;
+  background-color: black;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+
+#completion-stage {
+    display: block;
+
+    width: 900px;
+    height: 250px;
+    margin-top: 400px;
+    padding: 0;
+
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 20px;
+
+    color: rgb(102, 102, 102);
+}
+#completion-stage code {
+    font-family: monospace;
+    display: block;
+    text-align: center;
+}
+#completion-stage .package {
+    font-size: 36px;
+}
+#completion-stage .class {
+    font-size: 72px;
+}
+
+#java6 img {
+    margin: 150px 80px 0 80px;
+    float: left;
+}
+#java6 q {
+    text-align: center;
+}
+
+#real-world img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    transition: height 3s;
+    height: 1px;
+}
+#real-world.active img {
+    height: 540px;
+}
+#real-world .holder {
+    position: absolute;
+    top: -4000px;
+    left: -2000px;
+    width: 5000px;
+    height: 10000px;
+    transition: background-color 1s;
+}
+#real-world.active .holder {
+    background-color: black;
+}

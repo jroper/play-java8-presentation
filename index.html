@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Reactive Web Developer with Play on Java 8</title>
+    <meta name="description" content="Java 8 heralds a new era of reactive programming, with lambdas and promises taking the limelight as the bright new features of the language. To best take advantage of these features, Play Framework offers a ground up asynchronous full stack web framework, with a high velocity development environment, making it the most natural web framework to use with Java 8. This presentation will showcase the best that Java 8 has to offer in the world of reactive web development." />
+    <meta name="author" content="James Roper" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <script src="prettify/run_prettify.js"></script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="blackOut"></div>
+
+<div id="impress">
+
+    <div id="title" class="step slide" data-x="0" data-y="0">
+      <h1>Reactive Web Development with Play on Java 8</h1>
+      <div class="me">James Roper</div>
+      <div class="twitter">@jroper</div>
+      <div class="typesafe"><img src="images/typesafe.png"/></div>
+    </div>
+
+    <div id="whoami" class="step slide" data-x="0" data-y="1000">
+        <h2>Who am I?</h2>
+        <img src="images/james.jpg" style="max-height: 70%"/>
+    </div>
+
+    <div id="agenda" class="step slide" data-x="0" data-y="2000">
+        <h2>Agenda</h2>
+        <ol>
+            <li>Java 8 and Reactive</li>
+            <li>Promises</li>
+            <li>Demo</li>
+            <li>Monads</li>
+        </ol>
+    </div>
+
+    <div id="reactive" class="step slide" data-x="1500" data-y="2000" data-rotate="-90">
+        <a class="manifesto" href="http://reactivemanifesto.org">http://reactivemanifesto.org</a>
+        <img src="images/reaction.jpg" style="max-height: 70%"/>
+        <a class="attribution" href="https://flic.kr/p/7Puf6B">https://flic.kr/p/7Puf6B</a>
+    </div>
+
+    <div id="java8" class="step slide" data-x="2500" data-y="2000" data-rotate="-90">
+        <img src="images/lambda.png" style="max-height: 80%"/>
+    </div>
+
+    <div id="promises" class="step slide" data-x="3500" data-y="2000" data-rotate="-90">
+        <img src="images/promise.jpg" style="max-height: 80%; margin-top: 100px;"/>
+        <a class="attribution" href="https://flic.kr/p/jLijhU">https://flic.kr/p/jLijhU</a>
+    </div>
+    
+    <div id="completion-stage" class="step" data-x="2500" data-y="3000" data-scale="4">
+        <code class="package">java.util.concurrent</code>
+        <code class="class">CompletionStage</code>
+    </div>
+
+    <div id="cs-demo" class="step slide" data-x="-1000" data-y="3000" data-rotate="90">
+        <h2>Demo time!</h2>
+        <img src="images/pogo.jpg" style="max-height: 70%;"/>
+        <a class="attribution" href="https://flic.kr/p/e7qMDB">https://flic.kr/p/e7qMDB</a>
+    </div>
+
+    <div id="java6" class="step slide" data-x="-2000" data-y="3000" data-rotate="90">
+        <img src="images/duke.gif" style="max-height: 70%;"/>
+        <q>oh hai!<br/>wat about java 6?</q>
+    </div>
+    
+    <div id="promise-demo" class="step slide" data-x="-3000" data-y="3000" data-rotate="90">
+        <h2>Demo time!</h2>
+        <img src="images/juggling.jpg" style="max-height: 70%;"/>
+        <a class="attribution" href="https://flic.kr/p/aaYog4">https://flic.kr/p/aaYog4</a>
+    </div>
+    
+    <div id="baker" class="step slide" data-x="-4000" data-y="3000" data-rotate="90">
+        <img src="images/baker.jpg" style="max-height: 80%;"/>
+        <a class="attribution" href="https://flic.kr/p/rEHUR">https://flic.kr/p/rEHUR</a>
+    </div>
+    
+    <div id="real-world" class="step" data-x="-8000" data-y="1500" data-rotate="90" data-scale="5">
+        <div class="holder"></div>
+        <img src="images/earth.jpg"/>
+    </div>
+    
+    <div id="reactive-maps-demo" class="step slide" data-x="-3000" data-y="1000" data-rotate="-90">
+        <h2>Demo time!</h2>
+        <img src="images/pyramid.jpg" style="max-height: 80%;"/>
+        <a class="attribution" href="https://flic.kr/p/hhFgZ">https://flic.kr/p/hhFgZ</a>
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>
+    document.addEventListener("keypress", function(event) {
+        if (event.keyCode == 120 /* x */) {
+            var blackOut = document.getElementsByClassName("blackOut")[0];
+            if (blackOut.style.display == "block") {
+                blackOut.style.display = "none";
+            } else {
+                blackOut.style.display = "block";
+            }
+        }
+        return true;
+    });
+
+    impress().init();
+</script>
+
+</body>
+</html>
+
